@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <canvas id="clock"></canvas>
+  <canvas id="countdown"></canvas>
+<script src="CanvasClock.js"></script>
+<script>
+
+  window.onload = function(){
+    var options = {
+      target: 'clock', //id
+      width: 800,
+      height: 500,
+      type: "clock", //'countdown'
+      endTime: '2016-05-18,12:32:21'
+    };
+    new CanvasClock(options);
+    var option = {
+      target: 'countdown', //id
+      width: 800,
+      height: 500,
+      type: "countdown", //'countdown'
+      endTime: '2016-05-21,12:32:21'
+    };
+    new CanvasClock(option);
+  };
+
+
+</script>
+</body>
+</html>

@@ -1,16 +1,19 @@
 # CanvasClock
-1.  html  <canvas id="clock"></canvas>
-var options = {
+
+1. <canvas id="clock"></canvas>
+   
+   var options = {
       target: 'clock', //id
       width: 800,
       height: 500,
       type: "clock" //'countdown'
     };
     new CanvasClock(options);
-    
-可以创建时钟，目前是只有时分秒，并且是24的
-2. html  <canvas id="countdown"></canvas>
-var option = {
+    可以创建时钟，目前是只有时分秒，并且是24的<br/>
+
+2. <canvas id="countdown"></canvas>
+  
+   var option = {
       target: 'countdown', //id
       width: 800,
       height: 500,
